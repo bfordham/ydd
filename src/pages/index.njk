@@ -1,0 +1,67 @@
+---
+layout: base
+permalink: /index.html
+title: 'Yolo Driven Development'
+description: 'Development pattern for life on the edge.'
+---
+
+<div class="wrapper">
+  <header class="full | section" style="--spot-color: var(--color-primary)">
+    <div class="section__inner flow region">
+      <h1 class="text-center" style="color: var(--color-light);">{{ title }}</h1>
+    </div>
+
+    {% svg "divider/waves", null, "seperator" %}
+  </header>
+
+  <article class="full | region">
+    <div class="wrapper flow prose">
+      <h2>The YOLO Development Manifesto</h2>
+
+      <p>We are uncovering better ways of shipping software by doing it and helping others YOLO it. Through this experience, we have come to value:</p>
+      <ul>
+        <li>Shipping over thinking - Why test when you can rest?</li>
+        <li>Production hotfixes over documentation - Documentation is just spoilers for your code</li>
+        <li>Copy-pasting over understanding - If it worked for someone on StackOverflow, it'll work for us</li>
+        <li>Responding to crashes over following a plan - The users are our QA team</li>
+        <li>That is, while there is value in the items on the right, we value living dangerously on the left more.</li>
+      </ul>
+
+      <h3>Our Principles:</h3>
+      <ol>
+        <li>Our highest priority is to satisfy ourselves through the early and continuous deployment of untested code.</li>
+        <li>Welcome changing requirements, even at 4:59 PM on a Friday. YOLO processes harness chaos for the customer's competitive advantage.</li>
+        <li>Deploy to production frequently, from a couple of times per day to a couple of times per minute.</li>
+        <li>"#TODO: Add comments later" is a perfectly acceptable documentation strategy.</li>
+        <li>The best architectures emerge from 3 AM coding sessions fueled by energy drinks.</li>
+      </ol>
+      
+      <p><strong>Remember:</strong> "It works on my machine" is not just a statement, it's a way of life.</p>
+
+      <h2 id="an-eleventy-starter">An Eleventy starter</h2>
+      <p>
+        Built around a CSS workflow that emphasizes guiding browser styling rather than micromanaging it. It
+        incorporates progressive enhancement, fluid type and spacing, and utilizes modern CSS features for
+        layout. The goal is to develop frontends that provide a great experience across all devices,
+        connection speeds, and usage contexts.
+      </p>
+      <p>
+        <strong>This is version 4.</strong> I keep a
+        <a href="https://github.com/madrilene/eleventy-excellent/tree/v1">branch of v1</a>,
+        <a href="https://github.com/madrilene/eleventy-excellent/tree/v2">v2</a> and <a href="https://github.com/madrilene/eleventy-excellent/tree/v3">v3</a>. I  tried to <a href="/get-started/#docs-lol">document most features and methodologies</a>.
+      </p>
+      <p><strong>Have fun</strong> and let me know if you find any issues or have ideas for improvements!</p>
+    </div>
+  </article>
+
+  <section class="full | region">
+    <div class="wrapper flow prose">
+      <h2>{{ blog.title }}</h2>
+      <!-- blog intro text is optional. -->
+
+      {% if blog.intro %}
+        <p>{{ blog.intro }}</p>
+      {% endif %}
+    </div>
+  </section>
+</div>
